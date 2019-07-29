@@ -1,0 +1,73 @@
+AWS-SOLUTION ARCHITECT: 
+
+From Surya Dai:
+	aws>awsguides>orionpapaer_aws_csa
+	
+Account & Services Layer-------------------------------------------------
+	The account and Services Layer represents how you create, access and
+	manage an AWS account and its services. From how you interact with 
+	an AWS account and managing user rights, to how you access and use
+	various AWS services and features.
+	This layer is all about account management and managing services. 
+	
+	There are basically three type of users:
+	1. AWS Users(prod. account)
+	2. AWS Root Account Holder
+	3. AWS Users (dev. account)
+	
+	These users connects to AWS INFRASTRUCTURE "CONTAINER" using ACCOUNT
+	CONNECTION TOOLS like AWS Console, ASW CLI AND AWS SDK. The connection
+	is of coarse via open internet. 
+	
+	The uses have to go through IAM. There could be production account 
+	and development account and cross account access between them. 
+	On premises data centers can be connected to AWS INFRASTRUCTURE using
+	hybrid connection. 
+	
+	Root User:
+	The user created when you first create your AWS account is called root
+	user. It's credentials are the email and password used when signing up
+	your AWS account. The root user has FULL administractive rights and 
+	access to every part of the account. Privileges can not be revoked from
+	the root user. 
+	
+	Best practices for Root User:
+	You should not use the root user for daily work and AWS admininstration. 
+	You should create a second user that has admin rights and sign in as 
+	that user for daily work. You should always protect yoru root account 
+	via MFA.
+	
+	Customers uses web browser [front end/public access] to connect to 
+	AWS. AWS users uses Terminal (SSH, RDP) to connect (back end/private 
+	access) to connect to AWS services. ASW services is in various regions
+	like us-east-1, us-west-1, ap-northeast-1, eu-central-1 and some other
+	Edge Location and Edge Cache. 
+	
+	AWS Users(prod. account):
+	This represents an AWS users that you may create (in IAM), who will 
+	have varying degree of access to the "production" AWS account. 
+	Permissions are controlled in IAM policies. 
+	
+	ACCOUNT CONNECTION TOOLS:-----------------------------------------
+	Console:
+	AWS Management Console generally referred as the console is the 
+	browser interface (url) used to interact with AWS. All the actions 
+	done in the console are API calls. 
+	
+	CLI:
+	AWS CLI is text based interface for accessing and adminstering AWS
+	resources. All commands executed using the CLI are API calls- and 
+	require API Key Configuration. 
+	
+	SDK:
+	AWS Software Development Kits integrate AWS Services with your Custom 
+	applications. All commands are API calls and require API Key 
+	configuration. SKD automatically perform request signing. Some examples
+	of SDK are: 
+		Xamrin, JavaScript, Java, iOS, Python(boto), .NET and many more. 
+		
+	
+	
+	
+	
+	
